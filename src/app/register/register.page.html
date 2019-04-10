@@ -1,0 +1,22 @@
+<ion-content>
+  <div class="pagePosition">
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mobile</ion-label>
+      <ion-input type="text" [(ngModel)]="mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Re Password</ion-label>
+      <ion-input type="password" [(ngModel)]="rePassword"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="reg()">Register</ion-button>
+    <ion-button expand="block" (click)="login()">Login</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,21 @@
+[
+    {
+        "productId": 1231,
+        "name": "Rice",
+        "img": [
+            "https://p.globalsources.com/IMAGES/PDT/BIG/040/B1161641040.jpg",
+            "https://previews.123rf.com/images/alterphoto/alterphoto1511/alterphoto151100071/48877889-scattered-rice-in-bag-isolated-on-white-background.jpg"
+        ],
+        "price": 1000,
+        "quantity": 1000
+    },
+    {
+        "productId": 1232,
+        "name": "Dal",
+        "img": [
+            "https://5.imimg.com/data5/DT/GF/MY-5114135/organic-toor-dal-250x250.jpg"
+        ],
+        "price": 200,
+        "quantity": 1000
+    }
+]

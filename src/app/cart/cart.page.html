@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back" (click)="goBack()"></ion-icon>
+    </ion-buttons>
+    <ion-title>
+      Cart
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let item of items" (click)="gotoDetails(item)">
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="5">
+          <div>
+            <ion-img [src]="item.img"></ion-img>
+          </div>
+        </ion-col>
+        <ion-col size="7">
+          <div>
+            <ion-label color="dark">{{item.name}}</ion-label>
+            <div>
+              <ion-label color="dark">₹ {{item.price}}</ion-label>
+            </div>
+            <div>
+              <ion-label>{{item.quantity}} Kg</ion-label>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button color="primary">Place Order</ion-button>
+    </ion-buttons>
+    <ion-title>₹ {{total}}</ion-title>
+  </ion-toolbar>
+</ion-footer>
